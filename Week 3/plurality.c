@@ -17,7 +17,7 @@ bool vote(string name);
 void print_winner(void);
 
 int main(int argc, string argv[]) {
-    if (argc < 2){
+    if (argc < 2) {
         printf("Usage: plurality [candidate ...]\n");
         return 1;
     }
