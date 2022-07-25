@@ -5,13 +5,13 @@
 #include <ctype.h>
 
 int main(int argc, string argv[]) {
-    if(argc != 2) {
+    if (argc != 2) {
         printf("Usage: ./caesar key\n");
         return 1;
     }
     
-    for(int key = 0; key < strlen(argv[1]); key++){
-        if(isalpha(argv[1][key])) {
+    for (int key = 0; key < strlen(argv[1]); key++){
+        if (isalpha(argv[1][key])) {
             printf("Usage: ./caesar key\n");
             return 1;
         }
@@ -21,8 +21,8 @@ int main(int argc, string argv[]) {
     string text = get_string("plaintext: ");
     printf("ciphertext: ");
     
-    for(int i = 0; i < strlen(text); i++) {
-        if(!isalpha(text[i])){
+    for (int i = 0; i < strlen(text); i++) {
+        if (!isalpha(text[i])){
             printf("%c", text[i]);
             continue;
         }
