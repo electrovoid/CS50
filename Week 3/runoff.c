@@ -48,7 +48,7 @@ int main(int argc, string argv[]) {
     for (int i = 0; i < voter_count; i++) {
         for (int j = 0; j < candidate_count; j++) {
             string name = get_string("Rank %i: ", j + 1);
-            if (!vote(i, j, name)){
+            if (!vote(i, j, name)) {
                 printf("Invalid vote.\n");
                 return 4;
             }
@@ -56,10 +56,10 @@ int main(int argc, string argv[]) {
         printf("\n");
     }
 
-    while (true){
+    while (true) {
         tabulate();
         bool won = print_winner();
-        if (won){
+        if (won) {
             break;
         }
         int min = find_min();
