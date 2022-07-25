@@ -15,10 +15,10 @@ int main(void) {
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
     
-    if(score1 > score2) {
+    if (score1 > score2) {
         printf("Player 1 wins!\n");
     }
-    else if(score1 < score2) {
+    else if (score1 < score2) {
         printf("Player 2 wins!\n");
     }
     else {
@@ -30,12 +30,12 @@ int main(void) {
 int compute_score(string word) {
     int sum = 0;
     int k;
-    for(int i = 0; i < strlen(word); i++) {
-        if(isupper(word[i])) {
+    for (int i = 0; i < strlen(word); i++) {
+        if (isupper(word[i])) {
             k = word[i] - 65;
             k = points[k];
         }
-        else if(islower(word[i])) {
+        else if (islower(word[i])) {
             k = word[i] - 97;
             k = points[k];
         }
